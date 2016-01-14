@@ -3,24 +3,36 @@
 	<head>
 		<link rel="stylesheet" type="text/css" 
 		href="../static/styles/stylesheet.css">
-		 
+		<script type="text/javascript" src="../static/scripts/shared/jquery.min.js">
+		</script> 
 	</head>
 	<body>
-		{% block content %}
-		{% endblock %}
 		<div id="header-container">
 			<div id="header">
 				 <ul>
 				 	<a href="index"><li>Home</li></a>
 			 		<a href="boglight"><li>Bog Light</li></a>
 			 		<a href="videos"><li>Videos</li></a>
-			 		<a href="calendar"><li>Calendar</li></a>
+			 		<a href="calendar"><li>Events</li></a>
 			 		<a href="store"><li>Store</li></a>
 			 		<a href="photos"><li>Photos</li></a>
 				</ul> 
 			</div>	
 		</div>
+			<div id="button-container">
+				<div id="facebook" a href="https://www.facebook.com/boglight?fref=ts#">
+				</div>
+				<div id="youtube" a href="https://www.youtube.com/user/drewjazz1625">
+					</div>
+			</div>
 		<div id="background">
+		<div id="player">
+		<audio controls="controls" preload="none">
+				<source src="../../music/track6.m4a">
+			</audio>
+		</div>
+		{% block content %}
+		{% endblock %}
 		</div>
 		
 </html>
